@@ -8,9 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
+            <!-- Todo: Localize the strings exposed through UIA! -->
             <local:NotificationTextBlock x:Name="ImmediateWindowTB" 
+                AutomationProperties.Name="History"
                 Width="300" Height="200" />
             <TextBox x:Name="InputWindowTB" 
+                AutomationProperties.Name="Command"
                 Width="300" Height="20" 
                 KeyDown="InputWindow_KeyDown" />
         </StackPanel>        
